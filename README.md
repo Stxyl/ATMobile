@@ -1,4 +1,4 @@
-# ATHop Project
+# ATMobile Project
 Extends the Functionally of the ATHop Card and Other Features
 - Adding Apple Wallet and Google Pay Support (NFC Tagging, Card Design, Etc)
 - **[Apple]** Use Live Activities (Apple Documentation states that Live Activities wont be available on the first offcial release of iOS 16)
