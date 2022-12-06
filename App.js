@@ -1,15 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { SvgUri } from 'react-native-svg';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 //import screens
 import Map from './screens/Map.js';
-import Depatures from './screens/Depatures.js';
+import Departures from './screens/Departures.js';
 import ATCard from './screens/ATCard.js';
 import Account from './screens/Account.js';
 
@@ -26,7 +23,7 @@ export default function App() {
                     iconName = focused
                         ? 'map'
                         : 'map-outline';
-                } else if (route.name === 'Depatures') {
+                } else if (route.name === 'Departures') {
                     iconName = focused
                         ? 'ios-list'
                         : 'ios-list-outline';
@@ -52,7 +49,7 @@ export default function App() {
             // Add your screens here
           }
             <Tab.Screen options={{ headerShown: false}} component={Map} name={"Map"} />
-            <Tab.Screen options={{ headerShown: false}} name={"Depatures"} component={Depatures} />
+            <Tab.Screen options={{ headerShown: false}} name={"Departures"} component={Departures} />
             <Tab.Screen options={{ headerShown: false}} name={"ATHop Card"} component={ATCard} />
             <Tab.Screen options={{ headerShown: false}} name={"Account"} component={Account} />
         </Tab.Navigator>
@@ -60,11 +57,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
