@@ -14,7 +14,6 @@ export default function ATCard() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#f4f5f0',
