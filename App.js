@@ -78,7 +78,8 @@ function App() {
                 <Tab.Screen options={{ headerShown: false}} name={"ATHop Card"} component={ATCard} />
                 <Tab.Screen options={{ headerShown: false}} name={"Account"} component={Account} />
             </Tab.Navigator>
-            </NavigationContainer>
+
+        </NavigationContainer>
     );
 }
 
